@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hit List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-controller="HitList">
+    <header></header>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-md-offset-3" "col-md-6">
+                <ul>
+                    <li ng-repeat="person in hitlist">
+
+                        <label class="person">{{person.name}}</label>
+                        <br>
+                        <img class="image" ng-src="{{person.image}}" width="290px" height="200px">
+                        <br>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
